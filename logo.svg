@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D4A2A"/>
+      <stop offset="55%" stop-color="#1A7A42"/>
+      <stop offset="100%" stop-color="#27AE60"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0B429"/>
+      <stop offset="100%" stop-color="#FFD54F"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="110" fill="url(#bg)"/>
+  
+  <!-- Subtle inner glow circle -->
+  <circle cx="256" cy="256" r="185" fill="#1A7A42" opacity="0.3"/>
+  
+  <!-- ZiZ Text -->
+  <text x="256" y="300" font-family="Arial Black, sans-serif" font-size="180" font-weight="900" 
+        text-anchor="middle" fill="url(#gold)" filter="url(#shadow)"
+        letter-spacing="-8">ZiZ</text>
+  
+  <!-- Underline accent -->
+  <rect x="156" y="340" width="200" height="8" rx="4" fill="url(#gold)" opacity="0.9"/>
+  
+  <!-- Small label -->
+  <text x="256" y="395" font-family="Arial, sans-serif" font-size="32" font-weight="700" 
+        text-anchor="middle" fill="#FFFFFF" opacity="0.85"
+        letter-spacing="6">STATION</text>
+</svg>
